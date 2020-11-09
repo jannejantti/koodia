@@ -109,6 +109,12 @@ for(let i=0; i<laksyt.length; i++){
   console.log(laksyt[i].tehtava);
 }
 
+const laksyTehtava = laksyt.map(function(laksy){
+  return laksy.tehtava;
+});
+
+  console.log(laksyTehtava);
+
 
 
 
