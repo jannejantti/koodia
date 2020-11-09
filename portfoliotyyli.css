@@ -7,6 +7,7 @@
   padding: 5px;
   border: none;
   text-decoration: none;
+  display: block;
 }
 .navigaatio:hover{
   background-color: #FF0000;
@@ -16,13 +17,22 @@
 }
 
 .opinnot{
-  border: 1px #166807 solid;
+  border: 1px #000000 solid;
   padding: 20px;
   border-radius: 20px;
 }
 
 .tiedot{
   background-image: url("taustakuvadiv.jpg");
+  size: auto;
+  padding: 5px;
+  width: 700px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #6EB1FF;
 }
 
 
