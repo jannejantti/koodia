@@ -75,6 +75,8 @@ console.log(perhe1Mappaus);
 //taysiikaiset
 const perhe2Filter = perhe.filter(function(perhe2){
   return perhe2.taysiikainen === true;
+}).map(function(perhe2){
+  return perhe2.etunimi;
 });
 console.log(perhe2Filter);
 //taysiikaiset loppuu
@@ -82,6 +84,8 @@ console.log(perhe2Filter);
 //alaikaiset
 const perhe3Filter = perhe.filter(function(perhe3){
   return perhe3.taysiikainen === false;
+}).map(function(perhe3){
+  return perhe3.etunimi;
 });
 console.log(perhe3Filter);
 //alaikaiset loppuu
