@@ -96,3 +96,74 @@ a:active{
   top: 100px;
   left: 0px;
 }
+
+/*
+16.11 asiat
+*/
+{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+}
+ul li{
+  padding: 5px;
+  background-color: #3399ff;
+  margin: 5px 0;
+}
+header{
+  background: #ff66cc;
+  padding: 10px;
+  text-align: center;
+}
+#opiskelija-lomake{
+  background: #3399ff;
+  padding: 15px;
+}
+#opiskelija-lomake input[type='text']{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px double #FBB5F7;
+}
+.kurssinappi{
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  background:	#ff66cc;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px 0px;
+}
+.kurssinappi:hover{
+  background: #444
+}
+.merkinta{
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  background:	#ff66cc;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px 0px;
+}
+.merkinta:hover{
+  background: #444
+}
+.lomake-alue{
+  padding: 10px 15px;
+  width: 70%;
+  margin: auto;
+}
+.virheilmoitus{
+  background: #ff3300;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+}
+
+

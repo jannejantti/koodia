@@ -146,3 +146,16 @@ console.log (laskutehtava(5, 2));
 console.log('testiä');
 
 
+/*
+16.11 asiat
+*/
+const kurssinOsat = document.querySelectorAll('.sisalto');
+
+kurssinOsat.forEach((osa)=>console.log(osa));
+
+const ul = document.querySelector('.kurssi');
+const kurssinappi = document.querySelector('.kurssinappi');
+const nimiSisalto = document.querySelector('#nimi');
+const asiaSisalto = document.querySelector('#tieto');
+const virhe = document.querySelector('.virheilmoitus');
+
