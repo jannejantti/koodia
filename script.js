@@ -164,7 +164,7 @@ kurssinappi.addEventListener('click', e =>{
   e.preventDefault();
 
   if(nimiSisalto.value === '' || asiaSisalto.value === ''){
-    virhe.classList.add('virhe')
+    virhe.classList.add('virhe');
     virhe.innerHTML = 'Täytä kaikki kentät';
     kurssinappi.style.background = 'red';
     kurssinappi.value = 'Virhe! En lisännyt tietoa.';
