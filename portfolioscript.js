@@ -96,3 +96,70 @@ function kaikkiiat(ekaNumero, tokaNumero, kolmasNumero, neljäsNumero){
 }
 console.log (kaikkiiat(42, 40, 21, 18));
 //funktionkutsu loppuu
+
+/*
+17.11 Asiat, yhteydenottosivun muutokset
+*/
+const nimiSisalto = document.querySelector('#nimi');
+const sukunSisalto = document.querySelector('#sukunimi');
+const sahkoSisalto = document.querySelector('#sahkoposti');
+const virhe = document.querySelector('.virheilmoitus');
+const nappula = document.querySelector('.nappula');
+
+nappula.addEventListener('click', e =>{
+  e.preventDefault();
+
+  if(nimiSisalto.value === '' || sahkoSisalto.value === ''){
+    nimiSisalto.classList.add('nimiSisalto');
+    nimiSisalto.innerHTML = 'Täytä tämäkin kohta *PAKOLLINEN*';
+    
+    sahkoSisalto.classList.add('sahkoSisalto');
+    sahkoSisalto.innerHTML = 'Täytä tämäkin kohta *PAKOLLINEN*';
+    
+    nappula.style.background = 'red';
+    nappula.value = 'Et täyttänyt pakollisia kohtia!';
+    setTimeout(() => nappula.value ='Lähetä', 3000);
+    setTimeout(() => nappula.style.background = 'rgb(255, 255, 255)', 3000);
+    
+    nimiSisalto.style.borderColor = 'red';
+    nimiSisalto.style.color = 'black';
+    nimiSisalto.value = 'Täytä tämäkin kohta *PAKOLLINEN*';
+    setTimeout(() => nimiSisalto.classList.remove('nimiSisalto'), 3000);
+    setTimeout(() => nimiSisalto.value =' ', 3000);
+    setTimeout(() => nimiSisalto.style.borderColor = 'rgb(255, 255, 255)', 3000);
+
+    sukunSisalto.style.borderColor = 'red';
+    sukunSisalto.style.color = 'black';
+    sukunSisalto.value = 'Täytä tämäkin kohta *PAKOLLINEN*';
+    setTimeout(() => sukunSisalto.classList.remove('nimiSisalto'), 3000);
+    setTimeout(() => sukunSisalto.value =' ', 3000);
+    setTimeout(() => sukunSisalto.style.borderColor = 'rgb(255, 255, 255)', 3000);
+    
+    sahkoSisalto.style.borderColor = 'red';
+    sahkoSisalto.style.color = 'black';
+    sahkoSisalto.value = 'Täytä tämäkin kohta *PAKOLLINEN*';
+    setTimeout(() => sahkoSisalto.classList.remove('sahkoSisalto'), 3000)
+    setTimeout(() => sahkoSisalto.value =' ', 3000);
+    setTimeout(() => sahkoSisalto.style.borderColor = 'rgb(255, 255, 255)', 3000);
+  }else{
+    const li = document.createElement('li');
+
+    li.appendChild(document.createTextNode(`${nimiSisalto.value} : ${sahkoSisalto.value}`));
+
+    viesti.appendChild(li);
+
+    nimiSisalto.value = ' ';
+    sahkoSisalto.value = ' ';
+  }
+});
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+
+

@@ -3,27 +3,25 @@
   <head>
       <link rel="stylesheet" type="text/css" href="omatyyliharjoitustyyli.css">   
 
-<!-- Side navigation -->
-<div class="navigaatio">
-  <a href="#">Portfolio</a>
-  <a href="#">Portfolio</a>
-
+  
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="testi1.html">Vaalea</a>
+  <a href="testi2.html">Tumma</a>
+  <a href="testi3.html">Sateenkaari</a>
 </div>
-
-
-
-<!-- Page content -->
-<div class="main">
-
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776; Asetukset</button>
 </div>
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<input type="button" onclick="clickAlert()" value="Lähetä" class="nappula">
 
 
 
-
-
-
-
-
+    <script src="omatyyliharjoitusscript.js"></script>
   </head>
 </html>
 
