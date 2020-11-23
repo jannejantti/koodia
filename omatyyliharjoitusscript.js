@@ -7,5 +7,9 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
 }
 function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
+  var element = document.body;
+  element.classList.toggle("dark-mode");
 }
+
+
+

@@ -122,7 +122,8 @@ header{
   background: #3399ff;
   padding: 15px;
 }
-#opiskelija-lomake input[type='text']{
+#opiskelija-lomake input[type='text'],
+#opiskelija-lomake textarea{
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
@@ -166,5 +167,17 @@ header{
   padding: 10px;
   margin: 10px;
 }
-
+.lahetanappi{
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  background:	#003366;
+  color: #000;
+  border-radius: 5px;
+  margin: 5px 0px;
+}
+.lahetanappi:hover{
+  background: #444
+}
 
