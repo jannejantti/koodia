@@ -16,18 +16,17 @@ function sendJSON(){
   xhr.setRequestHeader("Content-type", "application/json");
 
   xhr.onreadystatechange = function(){
-    if(xgr.readyState === 4 && xhr.status === 200){
+    if(xhr.readyState === 4 && xhr.status === 200){
       console.log('valmis, yhteys toimii');
     }
   };
   var data = JSON.stringify({
     "EmailMsg" : "Tähän tulee postin sisältö", //kirjoittaa sähköpostin sisällön
-    "EmailAddress" : "janne.jantti@edu.salpaus.fi", //viestin kirjoittajan sähköpostin
-    "EmailTo" : "janttijannu1@gmail.com", //oma sähköposti
+    "EmailAddress" : "janttijannu1@gmail.com", //viestin kirjoittajan sähköpostin
+    "EmailTo" : "janne.jantti@edu.salpaus.fi", //oma sähköposti
     "EmailName" : "Teppo Tyyppi" //nimi-kentän sisältö
   });
   xhr.send(data);
 }
-
 
 
