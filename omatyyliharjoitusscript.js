@@ -8,8 +8,9 @@ function closeNav() {
 }
 function myFunction() {
   var element = document.body;
-  element.classList.toggle("dark-mode");
+  element.classList.toggle("darkmode");
 }
-
-
-
+function myFunctio() {
+  var element = document.body;
+  element.classList.toggle("vaalea");
+}
