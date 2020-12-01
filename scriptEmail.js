@@ -3,7 +3,7 @@
 const emailnappi = document.querySelector('.lahetanappi');
 
 emailnappi.addEventListener('click', e => {
-  e.preventDefault
+  e.preventDefault();
   sendJSON();
 });
 
@@ -22,8 +22,8 @@ function sendJSON(){
   };
   var data = JSON.stringify({
     "EmailMsg" : "Tähän tulee postin sisältö", //kirjoittaa sähköpostin sisällön
-    "EmailAddress" : "janttijannu1@gmail.com", //viestin kirjoittajan sähköpostin
-    "EmailTo" : "janne.jantti@edu.salpaus.fi", //oma sähköposti
+    "EmailAddress" : "janne.jantti@edu.salpaus.fi", //viestin kirjoittajan sähköpostin
+    "EmailTo" : "janttijannu1@gmail.com", //oma sähköposti
     "EmailName" : "Teppo Tyyppi" //nimi-kentän sisältö
   });
   xhr.send(data);
