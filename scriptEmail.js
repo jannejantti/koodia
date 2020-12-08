@@ -2,7 +2,7 @@
 
 const emailnappi = document.querySelector('.lahetanappi');
 
-emailnappi.addEventListener('click', e => {
+emailnappi.addEventListener('click', e =>{
   e.preventDefault();
   sendJSON();
 });

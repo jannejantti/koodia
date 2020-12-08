@@ -6,11 +6,21 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
-function myFunction() {
-  var element = document.body;
-  element.classList.toggle("darkmode");
+
+
+
+document.querySelector('#laheta').addEventListener('click', e =>{
+  e.preventDefault();
+  const chk = document.querySelector('input[name="gender"]:checked').value;
+
+if (chk=='Vaalea'){
+    console.log("vaalea");
+    document.body.style.background="white";
+    document.body.style.color="black";
 }
-function myFunctio() {
-  var element = document.body;
-  element.classList.toggle("vaalea");
+else if (chk=='Tumma'){
+  console.log("tumma")
+    document.body.style.background="black";
+    document.body.style.color="white";
 }
+});
